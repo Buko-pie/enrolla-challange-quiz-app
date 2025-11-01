@@ -20,17 +20,30 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Architecture notes
 
-To learn more about Next.js, take a look at the following resources:
+Just used NextJS default App route
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+src/
+├─ app/
+│  ├─ page.tsx          <- Home/Landing page
+│  └─ quiz/
+│     └─ page.tsx       <- Quiz page component
+|     ├─ prep/
+|     |  └─ page.tsx    <- Prep/Starting page befor taking the quiz
+|     └─ result/
+|        └─ page.tsx    <- Quiz results page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Libraries used and rationale
 
-## Deploy on Vercel
+- moment.js for handling timestamp and formatting
+- react-redux for handling quiz states
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Trade-offs and shortcuts taken
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+I did use react redux for this, to me redux makes more sense than using React's useState and useEffect.
+Also using cookies for storing data for lacking a database.
+
+## Honest time spent
+
+About 10 hours, I worked on this repo in 2 days on and off
