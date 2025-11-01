@@ -46,6 +46,8 @@ Just used NextJS default App route
 I did use react redux for this, to me redux makes more sense than using React's useState and useEffect.
 Also using cookies for storing data for lacking a database.
 
+I generated most of the frontend using claud AI and some boiler plates for setting up the route endpoints though there were a lot of code replacing and bug fixing
+
 ## Honest time spent
 
 About 10 hours, I worked on this repo in 2 days on and off
