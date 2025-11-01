@@ -24,6 +24,7 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 Just used NextJS default App route
 
+```bash
 src/
 ├─ app/
 │  ├─ page.tsx          <- Home/Landing page
@@ -33,6 +34,7 @@ src/
 |     |  └─ page.tsx    <- Prep/Starting page befor taking the quiz
 |     └─ result/
 |        └─ page.tsx    <- Quiz results page
+```
 
 ## Libraries used and rationale
 
